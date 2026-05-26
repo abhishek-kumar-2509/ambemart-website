@@ -6,12 +6,12 @@
 }
 
 body {
-    background: #4ab0c7;
+    background: #f0f4ff;
 }
 
 header {
-    background: #4ab0c7;
-    color: rgb(5, 0, 50);
+    background: #003580;
+    color: white;
     text-align: center;
     padding: 20px;
 }
@@ -21,16 +21,14 @@ nav {
 }
 
 nav a {
-    color: rgb(5, 0, 6);
+    color: #ffd700;
     text-decoration: none;
     margin: 10px;
     font-weight: bold;
 }
 
 .hero {
-    background: url('images/shop.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #003580, #0055cc);
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -49,8 +47,8 @@ nav a {
 .hero button {
     padding: 12px 25px;
     border: none;
-    background: orange;
-    color: black;
+    background: #ffd700;
+    color: #003580;
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
@@ -59,20 +57,23 @@ nav a {
 .products {
     padding: 50px 20px;
     text-align: center;
+    background: #f0f4ff;
 }
 
 .products h2 {
     margin-bottom: 30px;
+    color: #003580;
 }
 
 .card {
-    background: rgb(124, 179, 166);
+    background: white;
     width: 300px;
     display: inline-block;
     margin: 20px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0,0,80,0.1);
+    border-top: 4px solid #003580;
 }
 
 .card img {
@@ -83,40 +84,46 @@ nav a {
 
 .card h3 {
     margin: 15px 0 10px;
+    color: #003580;
 }
 
 .card p {
     padding: 0 15px 20px;
+    color: #555;
 }
 
 .reviews {
     padding: 50px 20px;
-    background: rgb(228, 166, 166);
+    background: #003580;
     text-align: center;
 }
 
 .reviews h2 {
     margin-bottom: 20px;
+    color: #ffd700;
 }
 
 .review-card {
-    background: #a6e8be;
+    background: #004aad;
+    color: white;
     width: 300px;
     display: inline-block;
     margin: 15px;
     padding: 20px;
     border-radius: 10px;
+    border-left: 4px solid #ffd700;
 }
 
 .contact {
-    background: #222;
-    color: rgba(190, 193, 40, 0.945);
+    background: #001f5b;
+    color: white;
     text-align: center;
     padding: 50px 20px;
 }
 
 .contact h2 {
     margin-bottom: 20px;
+    color: #ffd700;
 }
 
 .contact p {
@@ -139,15 +146,16 @@ form textarea {
 form button {
     padding: 12px 25px;
     border: none;
-    background: orange;
+    background: #ffd700;
+    color: #003580;
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
 }
 
 footer {
-    background: black;
-    color: rgb(218, 206, 206);
+    background: #001f5b;
+    color: #ffd700;
     text-align: center;
     padding: 15px;
 }
@@ -164,25 +172,6 @@ footer {
     font-weight: bold;
 }
 
-@media(max-width:768px) {
-
-    .card,
-    .review-card,
-    form input,
-    form textarea {
-        width: 90%;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .hero h2 {
-        font-size: 28px;
-    }
-
-}
 .map {
     padding: 50px 20px;
     text-align: center;
@@ -191,4 +180,21 @@ footer {
 
 .map h2 {
     margin-bottom: 20px;
+    color: #003580;
+}
+
+@media(max-width:768px) {
+    .card,
+    .review-card,
+    form input,
+    form textarea {
+        width: 90%;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    .hero h2 {
+        font-size: 28px;
+    }
 }
